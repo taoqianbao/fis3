@@ -18,3 +18,19 @@
 // fis.match('*.png', {
 //   optimizer: fis.plugin('png-compressor')
 // });
+
+
+
+fis.match('*.{png,js,css}', {
+  release: '/static/$0'
+});
+
+fis.match('*.js', {
+  useHash: false
+});
+fis.match('*.css', {
+  useHash: false
+});
+fis.match('*.png', {
+  useHash: false
+});
